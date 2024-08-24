@@ -23,3 +23,4 @@ jobs:
 
       - name: Running test cases
         run: node --test
+        working-directory: .
