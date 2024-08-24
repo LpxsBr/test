@@ -1,4 +1,4 @@
-name: test
+name: Push Workflow 001
 run-name: ${{github.actor}} running test on platform
 on:
   push:
