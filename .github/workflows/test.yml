@@ -1,5 +1,5 @@
 name: test
-run-name: ${{github.actor}} running test on platform ${{runner.os}}
+run-name: ${{github.actor}} running test on platform
 on:
   push:
     branches:
@@ -12,12 +12,11 @@ jobs:
       - name: Checkout dir
         uses: actions/checkout@v3
         with:
-          ref:
-            - main
+          ref: main
       - name: Set up Node.js 16.14.0
         uses: actions/setup-node@v3
         with:
           node-version: 16.14.0
 
       - name: Run main.js on assets
-        run: node ./assets/main.js
+        run: node ./assets/hello.js
