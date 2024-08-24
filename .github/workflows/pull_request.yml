@@ -1,4 +1,4 @@
-name: test
+name: PR Workflow 002
 run-name: ${{github.actor}} open pull request from ${{github.head_ref}} to ${{github.base_ref}}
 on:
   pull_request:
